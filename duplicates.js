@@ -1,16 +1,19 @@
-function findDupilcate(arr) {
-    let duplicate = [1]
-    let arrdup = [1]
+// 
+function duplicates(arr) {
 
-    for(let i = 0 ; i < arr.length ; i++){
-        if(arrdup.includes(arr[i])){
-            if(!duplicate.includes(arr[i])){
+  let dupli = []
+  let orgi = []
 
-                duplicate.push(arr[i])
-            }
-        }else{
-            arrdup.push(arr[i])
+  for(let i = 0 ; i<arr.length ; i++){
+    if(orgi.includes(arr[i])){
+
+        if(!dupli.includes[arr[i]]){
+
+            dupli.push(arr[i])
         }
+    }else{
+        orgi.push(arr[i])
     }
-    return duplicate
-} console.log(findDupilcate([1,1,2,3,4,1,2,1]))
+  } return dupli
+    
+}console.log(duplicates([1,2,3,2,4,3,5,6,4,7,8,9]));
