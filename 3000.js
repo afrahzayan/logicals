@@ -16,3 +16,4 @@ var areaOfMaxDiagonal = function(dimensions) {
 return number
 }
 console.log(areaOfMaxDiagonal([[9,3],[8,6]]))
+console.log(areaOfMaxDiagonal([[9,3],[8,6]]))
